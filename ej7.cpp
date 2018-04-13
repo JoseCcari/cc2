@@ -2,29 +2,26 @@
 
 using namespace std;
 
-void cadena1(char *s,char *t)
+void cadena1(char *char1,char *char2)
 {
-    int a=0,b=0;
-    while(*(s+a)!='\0')
-    {
-        a++;
+    int tam1=0,tam2=0;
+    while(*(char1+tam1)!='\0'){
+        tam1++;
     }
-    while(*(t+b)!='\0')
-    {
-        b++;
+    while(*(char2+tam2)!='\0'){
+        tam2++;
     }
-    for(int i=0;i<a+b;i++)
-        *(s+b+i)=*(t+i) ;
+    for(int i=0;i<tam2;i++)
+        *(char1+tam1+i)=*(char2+i) ;
 
 }
 
 int main(){
-    
-    char t[]="hola";
-    char s[]="mundo";
-    
+    char s[]="hola";
+    char t[]="mundo";
     cadena1(s,t);
+
     cout<<s<<endl;
-    
+
     return 0;
 }
