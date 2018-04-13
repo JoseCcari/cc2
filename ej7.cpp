@@ -20,8 +20,8 @@ void cadena1(char *s,char *t)
 
 int main(){
     
-    char t[]="german";
-    char s[]="garcia";
+    char t[]="hola";
+    char s[]="mundo";
     
     cadena1(s,t);
     cout<<s<<endl;
